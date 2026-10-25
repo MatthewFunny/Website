@@ -1,0 +1,121 @@
+
+#reading-progress{position:fixed;top:0;left:0;width:100%;height:3px;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#70addd,#86c4ad);z-index:60;pointer-events:none}
+.hero{isolation:isolate}.circuit-backdrop{position:absolute;inset:-15px -40px;width:calc(100% + 80px);height:100%;z-index:-4;pointer-events:none;opacity:.55}.trace-base{stroke:#82abd0;stroke-width:1;opacity:.28}.trace-signal{stroke:#6fafe0;stroke-width:2;stroke-dasharray:10 520;animation:signal-flow 9s linear infinite}.trace-signal path:nth-child(2){animation-delay:-3s}.trace-nodes{fill:var(--bg);stroke:#87afd1;stroke-width:1.5;opacity:.65}@keyframes signal-flow{to{stroke-dashoffset:-1060}}.hero:after{content:"";position:absolute;inset:20px -30px;z-index:-5;background-image:radial-gradient(#7aa6cc30 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(90deg,transparent,#0005,transparent);pointer-events:none}.portrait-hero:before{animation:ring-breathe 8s ease-in-out infinite}@keyframes ring-breathe{50%{opacity:.45;scale:1.025}}
+#motion-toggle{font-size:17px}.desktop-nav .nav-active:after{width:100%}.desktop-nav .nav-active{color:#527fa4}.dark .desktop-nav .nav-active{color:#b7dafa}.primary,.secondary,.activity-filter{position:relative;overflow:hidden}.tap-spark{position:absolute;width:10px;height:10px;border-radius:50%;background:currentColor;opacity:.16;pointer-events:none;animation:tap-expand .6s ease-out forwards;transform:translate(-50%,-50%)}@keyframes tap-expand{to{transform:translate(-50%,-50%) scale(32);opacity:0}}
+.project-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 35%,#ffffff30 50%,transparent 65%);transform:translateX(-110%);transition:transform .7s;pointer-events:none}.project:hover .project-visual:after{transform:translateX(110%)}dialog[open]{animation:dialog-enter .22s ease-out}@keyframes dialog-enter{from{opacity:0;translate:0 12px}to{opacity:1;translate:0 0}}
+.calm-mode *,.calm-mode *:before,.calm-mode *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.calm-mode .reveal{opacity:1!important;transform:none!important}
+@media(max-width:760px){.circuit-backdrop{inset:0;width:100%;opacity:.35}.hero:after{inset:0}.topright{gap:8px}.iconbtn{width:40px;height:40px}}
+@media(prefers-reduced-motion:reduce){.trace-signal,.portrait-hero:before{animation:none}dialog[open]{animation:none}}
+
+/* Shared circuit texture across every portfolio section. */
+main>section{position:relative;isolation:isolate;overflow:hidden}main>section>.circuit-backdrop{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:.4}.contact>.circuit-backdrop{opacity:.55}.contact .trace-base{stroke:#afd5fa;opacity:.3}.contact .trace-signal{stroke:#a9d7ff}.contact .trace-nodes{fill:#172534;stroke:#a9d7ff}.core-values>.circuit-backdrop{opacity:.35}.desktop-nav{gap:23px}@media(max-width:960px) and (min-width:761px){.desktop-nav{gap:13px;font-size:11px}}
+
+.hero-values{display:flex;gap:8px;flex-wrap:wrap;margin-top:23px}.hero-values span{font-size:12px;font-weight:800;padding:8px 13px;border:1px solid var(--line);border-radius:99px;background:var(--surface)}.hero-values span:nth-child(1){background:#fceadf;color:#86542f}.hero-values span:nth-child(2){background:#deedfb;color:#315e86}.hero-values span:nth-child(3){background:#e2efe6;color:#426c53}.hero-motto{font-size:14px;line-height:1.8;color:var(--muted);border-left:2px solid var(--accent);margin:18px 0 0;padding-left:16px;max-width:440px}.hero-motto small{display:block;font-size:9px;font-style:normal;font-weight:800;letter-spacing:.15em;margin-bottom:4px}.hero{max-height:none;padding-top:30px;min-height:780px}
+.honors{background:var(--surface)}.honors-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:stretch}.honor-feature{position:relative;overflow:hidden;border:1px solid #d5bb7d;border-radius:26px;padding:35px;background:linear-gradient(145deg,#faf2dc,#f0e0b7);color:#47391e;display:flex;flex-direction:column}.award-seal{width:115px;height:115px;position:relative;display:grid;place-items:center;margin-bottom:28px}.award-seal>span{font-size:65px;line-height:1;animation:award-glow 5s ease-in-out infinite;color:#aa7b2c}.award-seal i{position:absolute;inset:0;border:1px dashed #b99349;border-radius:50%;animation:seal-orbit 36s linear infinite}.award-seal:after{content:"";position:absolute;inset:10px;border:1px solid #bc995755;border-radius:50%}.award-level{font-size:10px;letter-spacing:.12em;font-weight:800}.honor-feature h3{font-size:42px;letter-spacing:-.06em;margin:13px 0 22px}.award-title{font-size:22px;font-weight:800;letter-spacing:-.035em;line-height:1.35;margin:0}.award-detail{font-size:12px;margin:8px 0 0;opacity:.75}.award-divider{height:1px;background:#ac8c4e50;margin:22px 0}.award-footer{font-size:9px;letter-spacing:.12em;font-weight:800;margin-top:auto;padding-top:38px}.honor-feature:before{content:"";position:absolute;inset:-60%;background:linear-gradient(120deg,transparent 43%,#fff6 49%,transparent 55%);transform:translateX(-70%);animation:award-sheen 9s ease-in-out infinite;pointer-events:none}.honor-ledger{display:flex;flex-direction:column}.honor-row{display:grid;grid-template-columns:28px 1fr 25px;gap:20px;padding:27px 0;border-bottom:1px solid var(--line);transition:padding .25s}.honor-row:first-child{padding-top:10px}.honor-row:last-child{border-bottom:0}.honor-index{font:11px ui-monospace,Consolas,monospace;color:var(--muted);padding-top:5px}.honor-row h3{font-size:23px;letter-spacing:-.045em;margin:0 0 8px}.honor-row p{font-size:13px;line-height:1.8;color:var(--muted);margin:0}.honor-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.honor-meta span{font-size:10px;padding:6px 10px;background:var(--surface2);border-radius:6px;color:var(--muted);font-weight:800}.honor-star{color:#b99143;font-size:27px;transition:transform .4s}.honor-row:hover .honor-star{transform:rotate(90deg)}.honor-row:hover{padding-left:8px}.dark .honor-feature{background:linear-gradient(145deg,#3f3828,#2b302d);color:#eee0bd;border-color:#76613a}.dark .award-seal>span{color:#dfbd76}
+.year-timeline .milestone small{font-size:25px;color:var(--ink);letter-spacing:-.04em}.year-timeline .milestone{padding-bottom:40px}.year-timeline .milestone:before{top:9px}.year-timeline .milestone h3{font-size:21px}
+@keyframes award-glow{50%{filter:drop-shadow(0 0 15px #ca9d5480);transform:scale(1.06)}}@keyframes seal-orbit{to{transform:rotate(360deg)}}@keyframes award-sheen{0%,65%{transform:translateX(-70%)}100%{transform:translateX(70%)}}
+@media(max-width:760px){.hero{min-height:auto;padding-top:40px}.hero-motto{font-size:13px}.honors-layout{grid-template-columns:1fr;gap:25px}.honor-feature{padding:28px}.award-seal{width:90px;height:90px;margin-bottom:22px}.honor-feature h3{font-size:36px}.award-footer{padding-top:28px}.honor-row{gap:12px}.honor-row h3{font-size:21px}.hero-art{margin-top:12px}}
+@media(prefers-reduced-motion:reduce){.award-seal>span,.award-seal i,.honor-feature:before{animation:none}}
+
+/* Milestone dots provide the same highlight on hover, focus, and touch. */
+.year-timeline .milestone:before{display:none}
+.milestone-dot{position:absolute;left:-58px;top:-5px;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:transparent;color:inherit;display:grid;place-items:center;z-index:2}
+.milestone-dot:before{content:"";width:15px;height:15px;border:3px solid var(--bg);border-radius:50%;background:#4083bd;box-shadow:0 0 0 1px #4083bd60;transition:transform .25s,box-shadow .25s,background .25s}
+.milestone-dot:after{content:"";position:absolute;inset:7px;border:1px solid #79aee070;border-radius:50%;opacity:0;transform:scale(.7);transition:opacity .25s,transform .25s}
+.year-timeline .milestone small{display:inline-block;color:#24649b;font-size:29px;font-weight:800;letter-spacing:-.04em;transition:color .25s,transform .25s,text-shadow .25s}
+.year-timeline .milestone h3,.year-timeline .milestone p{position:relative;transition:transform .25s,color .25s}
+.year-timeline .milestone{isolation:isolate}
+.year-timeline .milestone:after{content:"";position:absolute;inset:-12px -20px 24px -15px;background:linear-gradient(105deg,#a1c9f723,transparent);border-left:2px solid #79aee0;border-radius:0 14px 14px 0;opacity:0;transition:opacity .25s;z-index:-1;pointer-events:none}
+.milestone.is-highlighted .milestone-dot:before{transform:scale(1.3);background:#286da6;box-shadow:0 0 0 7px #83b6e525,0 0 20px #83b6e540}
+.milestone.is-highlighted .milestone-dot:after{opacity:1;transform:scale(1)}
+.year-timeline .milestone.is-highlighted small{color:#124d7c;transform:translateX(5px);text-shadow:0 4px 20px #80b8e535}
+.year-timeline .milestone.is-highlighted h3,.year-timeline .milestone.is-highlighted p{transform:translateX(5px)}
+.year-timeline .milestone.is-highlighted:after{opacity:1}
+.dark .year-timeline .milestone small{color:#a1d2ff}
+.dark .year-timeline .milestone.is-highlighted small{color:#deefff}
+.dark .milestone-dot:before{background:#9acbfa;border-color:var(--bg)}
+.dark .milestone.is-highlighted .milestone-dot:before{background:#c2e2ff}
+
+/* Hero interests and a more readable motto. */
+.hero-motto{font-size:17px;line-height:1.8;max-width:470px}
+.portrait-hero .art-note.one{top:48px;left:-12px;transform:rotate(-7deg)}
+.portrait-hero .art-note.two{right:-10px;bottom:80px;transform:rotate(5deg)}
+.portrait-hero .art-note.three{left:15px;bottom:24px;transform:rotate(-4deg);animation-delay:-1.5s}
+/* Award rows: a soft highlight, edge accent, and a raised surface. */
+.honor-row{grid-template-columns:28px 1fr;position:relative;padding:25px 18px;border:1px solid transparent;border-bottom-color:var(--line);border-radius:14px;transition:transform .25s,background .25s,border-color .25s,box-shadow .25s}
+.honor-row:first-child{padding-top:25px}
+.honor-row:before{content:"";position:absolute;left:0;top:20px;bottom:20px;width:3px;border-radius:3px;background:#c39a4c;opacity:0;transform:scaleY(.4);transition:opacity .25s,transform .25s}
+.honor-row:hover{padding-left:18px;transform:translateY(-3px);background:linear-gradient(110deg,#e9f2fb,#f9f3e650);border-color:#b6cfe4;box-shadow:0 10px 28px #2349680c}
+.honor-row:hover:before{opacity:1;transform:scaleY(1)}
+.honor-row h3{transition:color .25s}.honor-row:hover h3{color:#245f8f}
+.honor-index{transition:color .25s}.honor-row:hover .honor-index{color:#a5782c}
+.dark .honor-row:hover{background:linear-gradient(110deg,#243d52,#34342655);border-color:#496078;box-shadow:0 10px 28px #0002}.dark .honor-row:hover h3{color:#b8dcff}
+/* Four distinct years, matched to the dot and highlight accent. */
+.year-timeline .milestone:nth-child(1){--year-color:#9c5c34;--year-active:#7e421e;--year-tint:#d9a47722}
+.year-timeline .milestone:nth-child(2){--year-color:#7960a5;--year-active:#62428e;--year-tint:#bba3df22}
+.year-timeline .milestone:nth-child(3){--year-color:#267866;--year-active:#125d4d;--year-tint:#8ac7b522}
+.year-timeline .milestone:nth-child(4){--year-color:#326eaa;--year-active:#1c558d;--year-tint:#8ebce322}
+.dark .year-timeline .milestone:nth-child(1){--year-color:#e9b188;--year-active:#ffd4b4}
+.dark .year-timeline .milestone:nth-child(2){--year-color:#c5adeb;--year-active:#e2d2ff}
+.dark .year-timeline .milestone:nth-child(3){--year-color:#87cfb8;--year-active:#b9f3de}
+.dark .year-timeline .milestone:nth-child(4){--year-color:#9cc8f2;--year-active:#d2e8ff}
+.year-timeline .milestone small,.dark .year-timeline .milestone small{color:var(--year-color)}
+.year-timeline .milestone.is-highlighted small,.dark .year-timeline .milestone.is-highlighted small{color:var(--year-active)}
+.year-timeline .milestone .milestone-dot:before,.dark .year-timeline .milestone .milestone-dot:before{background:var(--year-color)}
+.year-timeline .milestone.is-highlighted .milestone-dot:before{background:var(--year-active);box-shadow:0 0 0 7px var(--year-tint)}
+.year-timeline .milestone:after{border-left-color:var(--year-color);background:linear-gradient(105deg,var(--year-tint),transparent)}
+.year-timeline .milestone .milestone-dot:after{border-color:var(--year-color)}
+@media(max-width:760px){.hero-motto{font-size:16px}.portrait-hero .art-note{font-size:10px;padding:11px 12px}.portrait-hero .art-note.one{top:24px;left:0}.portrait-hero .art-note.two{right:0;bottom:77px}.portrait-hero .art-note.three{left:10px;bottom:10px}.honor-row{padding:23px 14px}.honor-row:first-child{padding-top:23px}.honor-row:hover{padding-left:14px}}
+
+/* Transparent portrait: face centered lower, with the outer circle as its mask. */
+.portrait-circle{overflow:hidden;border-radius:50%}.portrait-circle .hero-person{position:absolute;left:5%;top:7%;bottom:auto;width:90%;height:auto;max-width:none;aspect-ratio:3/4;object-fit:contain;object-position:center top;border-radius:0;box-shadow:none}
+.honor-row:before{display:none}
+.contact .actions .primary{font-size:13px;overflow-wrap:anywhere;max-width:100%}
+
+/* Center the portrait, then lower it by 15% of the circular frame. */
+.portrait-circle{overflow:hidden;border-radius:50%}.portrait-circle .hero-person{left:50%;top:65%;bottom:auto;width:90%;height:auto;aspect-ratio:3/4;transform:translate(-50%,-50%);object-fit:contain;object-position:center;border-radius:0}
+/* Independent circular photo inset inside the larger blue circle. */
+.portrait-circle .hero-person{position:absolute;left:50%;top:45%;bottom:auto;width:80%;height:80%;aspect-ratio:1;transform:translate(-50%,-50%);object-fit:cover;object-position:center 30%;border-radius:50%;clip-path:circle(50%);box-shadow:0 0 0 2px #ffffff75,0 10px 24px #284c6c15}
+
+/* Concentric circles: equal 10% inset on every side. */
+.portrait-circle .hero-person{left:50%;top:50%;width:80%;height:80%;transform:translate(-50%,-50%);border-radius:50%;clip-path:circle(50%);object-position:center 30%}
+
+
+/* Narrower concentric ring; lower the photo inside the fixed circular crop. */
+.portrait-circle .hero-person{left:50%;top:50%;width:88%;height:88%;transform:translate(-50%,-50%);object-fit:cover;object-position:center 20%;border-radius:50%;clip-path:circle(50%)}
+
+
+/* Journey year text: 10% white blended into each theme-specific color. */
+body:not(.dark) .year-timeline .milestone:nth-child(1) small{color:#a66c48}
+body:not(.dark) .year-timeline .milestone:nth-child(1).is-highlighted small{color:#8b5535}
+body:not(.dark) .year-timeline .milestone:nth-child(2) small{color:#8670ae}
+body:not(.dark) .year-timeline .milestone:nth-child(2).is-highlighted small{color:#725599}
+body:not(.dark) .year-timeline .milestone:nth-child(3) small{color:#3c8675}
+body:not(.dark) .year-timeline .milestone:nth-child(3).is-highlighted small{color:#2a6d5f}
+body:not(.dark) .year-timeline .milestone:nth-child(4) small{color:#477db3}
+body:not(.dark) .year-timeline .milestone:nth-child(4).is-highlighted small{color:#336698}
+.dark .year-timeline .milestone:nth-child(1) small{color:#ebb994}
+.dark .year-timeline .milestone:nth-child(1).is-highlighted small{color:#ffd8bc}
+.dark .year-timeline .milestone:nth-child(2) small{color:#cbb5ed}
+.dark .year-timeline .milestone:nth-child(2).is-highlighted small{color:#e5d7ff}
+.dark .year-timeline .milestone:nth-child(3) small{color:#93d4bf}
+.dark .year-timeline .milestone:nth-child(3).is-highlighted small{color:#c0f4e1}
+.dark .year-timeline .milestone:nth-child(4) small{color:#a6cef3}
+.dark .year-timeline .milestone:nth-child(4).is-highlighted small{color:#d7eaff}
+/* A brighter orange for 2023, with theme-specific hover colors. */
+body:not(.dark) .year-timeline .milestone:nth-child(1) small{color:#d47936}
+body:not(.dark) .year-timeline .milestone:nth-child(1).is-highlighted small{color:#c66321}
+.dark .year-timeline .milestone:nth-child(1) small{color:#ffbc83}
+.dark .year-timeline .milestone:nth-child(1).is-highlighted small{color:#ffd6b0}
+
+/* Shared final year and dot palette. */
+body:not(.dark) .year-timeline .milestone:nth-child(1){--year-color:#d47936;--year-active:#c66321}
+body:not(.dark) .year-timeline .milestone:nth-child(2){--year-color:#8670ae;--year-active:#725599}
+body:not(.dark) .year-timeline .milestone:nth-child(3){--year-color:#3c8675;--year-active:#2a6d5f}
+body:not(.dark) .year-timeline .milestone:nth-child(4){--year-color:#477db3;--year-active:#336698}
+.dark .year-timeline .milestone:nth-child(1){--year-color:#ffbc83;--year-active:#ffd6b0}
+.dark .year-timeline .milestone:nth-child(2){--year-color:#cbb5ed;--year-active:#e5d7ff}
+.dark .year-timeline .milestone:nth-child(3){--year-color:#93d4bf;--year-active:#c0f4e1}
+.dark .year-timeline .milestone:nth-child(4){--year-color:#a6cef3;--year-active:#d7eaff}
+.year-timeline .milestone .milestone-dot:before{background:var(--year-color);box-shadow:0 0 0 1px var(--year-color)}
+.year-timeline .milestone.is-highlighted .milestone-dot:before,.dark .year-timeline .milestone.is-highlighted .milestone-dot:before{background:var(--year-active);box-shadow:0 0 0 7px var(--year-tint),0 0 0 1px var(--year-active)}
